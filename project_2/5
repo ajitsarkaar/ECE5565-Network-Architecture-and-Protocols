@@ -1,0 +1,85 @@
+No.     Time           Source                Destination           Protocol Length Info
+    493 30.918636      128.238.29.22         128.238.38.160        DNS      176    Standard query response 0x0003 NS mit.edu NS bitsy.mit.edu NS strawb.mit.edu NS w20ns.mit.edu A 18.72.0.3 A 18.71.0.151 A 18.70.0.160
+
+Frame 493: 176 bytes on wire (1408 bits), 176 bytes captured (1408 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 128.238.29.22, Dst: 128.238.38.160
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 162
+    Identification: 0x0057 (87)
+    Flags: 0x0000
+    Time to live: 126
+    Protocol: UDP (17)
+    Header checksum: 0xf661 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 128.238.29.22
+    Destination: 128.238.38.160
+User Datagram Protocol, Src Port: 53, Dst Port: 3746
+    Source Port: 53
+    Destination Port: 3746
+    Length: 142
+    Checksum: 0xc302 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 15]
+Domain Name System (response)
+    Transaction ID: 0x0003
+    Flags: 0x8180 Standard query response, No error
+    Questions: 1
+    Answer RRs: 3
+    Authority RRs: 0
+    Additional RRs: 3
+    Queries
+        mit.edu: type NS, class IN
+            Name: mit.edu
+            [Name Length: 7]
+            [Label Count: 2]
+            Type: NS (authoritative Name Server) (2)
+            Class: IN (0x0001)
+    Answers
+        mit.edu: type NS, class IN, ns bitsy.mit.edu
+            Name: mit.edu
+            Type: NS (authoritative Name Server) (2)
+            Class: IN (0x0001)
+            Time to live: 20736
+            Data length: 8
+            Name Server: bitsy.mit.edu
+        mit.edu: type NS, class IN, ns strawb.mit.edu
+            Name: mit.edu
+            Type: NS (authoritative Name Server) (2)
+            Class: IN (0x0001)
+            Time to live: 20736
+            Data length: 9
+            Name Server: strawb.mit.edu
+        mit.edu: type NS, class IN, ns w20ns.mit.edu
+            Name: mit.edu
+            Type: NS (authoritative Name Server) (2)
+            Class: IN (0x0001)
+            Time to live: 20736
+            Data length: 8
+            Name Server: w20ns.mit.edu
+    Additional records
+        bitsy.mit.edu: type A, class IN, addr 18.72.0.3
+            Name: bitsy.mit.edu
+            Type: A (Host Address) (1)
+            Class: IN (0x0001)
+            Time to live: 20736
+            Data length: 4
+            Address: 18.72.0.3
+        strawb.mit.edu: type A, class IN, addr 18.71.0.151
+            Name: strawb.mit.edu
+            Type: A (Host Address) (1)
+            Class: IN (0x0001)
+            Time to live: 20736
+            Data length: 4
+            Address: 18.71.0.151
+        w20ns.mit.edu: type A, class IN, addr 18.70.0.160
+            Name: w20ns.mit.edu
+            Type: A (Host Address) (1)
+            Class: IN (0x0001)
+            Time to live: 20736
+            Data length: 4
+            Address: 18.70.0.160
+    [Request In: 492]
+    [Time: 0.000361000 seconds]
